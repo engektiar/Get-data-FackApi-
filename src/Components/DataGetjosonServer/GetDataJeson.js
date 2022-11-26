@@ -15,13 +15,15 @@ const GetDataJeson = () => {
   return (
     <div>
       <h1>Get data Fack api Thaka </h1>
-      {user.map((item) => {
-        return (
-          <div>
-            <p>{item.title}</p>
-          </div>
-        );
-      })}
+      {user &&
+        user.map((item) => {
+          const { id, title } = item;
+          return (
+            <div key={id}>
+              <p>{title}</p>
+            </div>
+          );
+        })}
     </div>
   );
 };
