@@ -1,11 +1,12 @@
 import React from "react";
 import "./App.css";
-import GetDataJeson from "./Components/DataGetjosonServer/GetDataJeson";
+
+import CoustumHook from "./Components/CustomHooks/CoustumHook";
 
 function App() {
   return (
     <div>
-      <GetDataJeson />
+      <CoustumHook />
     </div>
   );
 }

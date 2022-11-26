@@ -4,7 +4,8 @@ const GetDataJeson = () => {
   const [user, setuser] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
-  const getalluser = () => {
+
+  useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/todos")
       .then((res) => {
         return res.json();
@@ -12,14 +13,12 @@ const GetDataJeson = () => {
       .then((data) => {
         setuser(data);
         setIsLoading(false);
+        setError(null);
       })
       .catch((error) => {
         setError(error.message);
         setIsLoading(false);
       });
-  };
-  useEffect(() => {
-    getalluser();
   }, []);
   return (
     <div>
