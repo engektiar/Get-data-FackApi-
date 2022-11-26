@@ -1,12 +1,11 @@
 import React from "react";
 import "./App.css";
-
-import Getdat from "./Components/GetDataJsonFile/Getdat";
+import UsingAxiosGet from "./Components/AxiosGetData/UsingAxiosGet";
 
 function App() {
   return (
     <div>
-      <Getdat />
+      <UsingAxiosGet />
     </div>
   );
 }
