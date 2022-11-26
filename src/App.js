@@ -1,12 +1,12 @@
 import React from "react";
 import "./App.css";
 
-import CoustumHook from "./Components/CustomHooks/CoustumHook";
+import Getdat from "./Components/GetDataJsonFile/Getdat";
 
 function App() {
   return (
     <div>
-      <CoustumHook />
+      <Getdat />
     </div>
   );
 }
